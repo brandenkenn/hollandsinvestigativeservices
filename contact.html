@@ -34,7 +34,7 @@
     <div class="w3-content">
       <div class="">
         <div class="container">
-          <form name="form" id="contact" action="/thanks.html" method="post" netlify>
+          <form name="form" id="contact" action="/thanks.html" method="post" netlify netlify-honeypot="bot-field">
             <h3>Send us a message</h3>
             <h4>Happy to answer any questions!</h4>
             <fieldset>
@@ -51,6 +51,9 @@
             </fieldset>
             <fieldset>
               <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            </fieldset>
+            <fieldset>
+              <label style="display:none">Don’t fill this out: <input name="bot-field"></label>
             </fieldset>
           </form>
         </div>
